@@ -18,3 +18,13 @@ class BaseDocument(BaseModel):
     
     model_config = ConfigDict(from_attributes=True, populate_by_name=True)
     
+    
+class RepositoryDocument(BaseDocument):
+    name: str
+    link: str 
+    content: str 
+    owner_id: str = Field(alias="owner_id")
+    
+    class Settings:
+        name = "repositories"
+    
