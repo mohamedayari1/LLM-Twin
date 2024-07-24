@@ -9,11 +9,16 @@ from selenium.webdriver.chrome.options import Options
 #from selenium.webdriver.chrome.service import Service
 from db.documents import BaseDocument
 
+
+
 class BaseCrawler(ABC):
     model: type[BaseDocument]
     
     @abstractmethod
     def extract(self, link: str, **kwargs) -> None: ...
+    
+    
+    
     
 class BaseAbstractCrawler(BaseCrawler, ABC):
     def __init__(self, scroll_limit: int = 5) -> None:

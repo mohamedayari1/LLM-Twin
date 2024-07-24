@@ -5999,4 +5999,4 @@ termcolor = "2.3.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10, <3.12"
-content-hash = "2ec19e6afc9fdd75f6ef67cac4dc4c56a75ce368e60ed02043ad3365e5d08e7a"
+content-hash = "f25cdff02c5b3c41672b3e3974006bc79ca2db9489faac2723cfa592fca44250"
